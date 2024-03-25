@@ -1,0 +1,107 @@
+[
+    {
+      "bookId": "1",
+      "bookName": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "image": "great_gatsby.jpg",
+      "review": "A masterpiece of American literature.",
+      "totalPages": 218,
+      "rating": 4.5,
+      "category": "Classic Fiction",
+      "tags": ["1920s", "American Dream"],
+      "publisher": "Charles Scribner's Sons",
+      "yearOfPublishing": 1925
+    },
+    {
+      "bookId": "2",
+      "bookName": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "image": "to_kill_a_mockingbird.jpg",
+      "review": "An essential read that tackles important themes.",
+      "totalPages": 324,
+      "rating": 4.8,
+      "category": "Classic Fiction",
+      "tags": ["Racism", "Southern Gothic"],
+      "publisher": "J. B. Lippincott & Co.",
+      "yearOfPublishing": 1960
+    },
+    {
+      "bookId": "3",
+      "bookName": "1984",
+      "author": "George Orwell",
+      "image": "1984.jpg",
+      "review": "A chilling vision of a dystopian future.",
+      "totalPages": 328,
+      "rating": 4.6,
+      "category": "Science Fiction",
+      "tags": ["Dystopia", "Totalitarianism"],
+      "publisher": "Secker & Warburg",
+      "yearOfPublishing": 1949
+    },
+    {
+      "bookId": "4",
+      "bookName": "The Catcher in the Rye",
+      "author": "J.D. Salinger",
+      "image": "catcher_in_the_rye.jpg",
+      "review": "A poignant exploration of adolescence.",
+      "totalPages": 224,
+      "rating": 4.4,
+      "category": "Classic Fiction",
+      "tags": ["Coming of Age", "Alienation"],
+      "publisher": "Little, Brown and Company",
+      "yearOfPublishing": 1951
+    },
+    {
+      "bookId": "5",
+      "bookName": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "image": "pride_and_prejudice.jpg",
+      "review": "A timeless romance with memorable characters.",
+      "totalPages": 432,
+      "rating": 4.7,
+      "category": "Classic Fiction",
+      "tags": ["Romance", "Regency Era"],
+      "publisher": "T. Egerton, Whitehall",
+      "yearOfPublishing": 1813
+    },
+    {
+      "bookId": "6",
+      "bookName": "Harry Potter and the Philosopher's Stone",
+      "author": "J.K. Rowling",
+      "image": "harry_potter_and_the_philosophers_stone.jpg",
+      "review": "A magical adventure for all ages.",
+      "totalPages": 336,
+      "rating": 4.9,
+      "category": "Fantasy",
+      "tags": ["Magic", "Wizardry"],
+      "publisher": "Bloomsbury",
+      "yearOfPublishing": 1997
+    },
+    {
+      "bookId": "7",
+      "bookName": "The Hobbit",
+      "author": "J.R.R. Tolkien",
+      "image": "the_hobbit.jpg",
+      "review": "An enchanting prelude to The Lord of the Rings.",
+      "totalPages": 310,
+      "rating": 4.7,
+      "category": "Fantasy",
+      "tags": ["Adventure", "Middle-earth"],
+      "publisher": "George Allen & Unwin",
+      "yearOfPublishing": 1937
+    },
+    {
+      "bookId": "8",
+      "bookName": "The Lord of the Rings",
+      "author": "J.R.R. Tolkien",
+      "image": "the_lord_of_the_rings.jpg",
+      "review": "Epic fantasy at its finest.",
+      "totalPages": 1178,
+      "rating": 4.9,
+      "category": "Fantasy",
+      "tags": ["Adventure", "Middle-earth"],
+      "publisher": "George Allen & Unwin",
+      "yearOfPublishing": 1954
+    }
+  ]
+  
