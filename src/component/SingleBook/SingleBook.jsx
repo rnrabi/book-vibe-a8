@@ -1,5 +1,6 @@
 import { FaRegStar } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import PropTypes from 'prop-types';
 const SingleBook = ({ book }) => {
   // console.log(book);
   const {bookId , bookName , image , author , category , rating} = book;
@@ -26,4 +27,7 @@ const SingleBook = ({ book }) => {
   );
 };
 
+SingleBook.propTypes = {
+  book:PropTypes.object.isRequired,
+}
 export default SingleBook;

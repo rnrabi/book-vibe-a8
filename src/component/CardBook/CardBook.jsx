@@ -1,9 +1,8 @@
 import { CiLocationOn } from "react-icons/ci";
-
-
+import PropTypes from 'prop-types';
 const CardBook = ({rbook}) => {
   console.log(rbook)
-const {bookId , bookName , image , author , category , rating,tags, yearOfPublishing , totalPages , publisher} = rbook;
+const { bookName , image , author , category , rating,tags, yearOfPublishing , totalPages , publisher} = rbook;
 
 
 
@@ -43,4 +42,7 @@ const {bookId , bookName , image , author , category , rating,tags, yearOfPublis
   );
 };
 
+CardBook.propTypes = {
+  rbook:PropTypes.object.isRequired,
+}
 export default CardBook;
