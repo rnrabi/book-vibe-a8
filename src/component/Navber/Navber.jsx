@@ -11,13 +11,13 @@ const Navber = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <NavLink className={({isActive})=>isActive ? 'font-bold text-green-600' : 'btn btn-ghost text-xl'}>Home</NavLink>
+              <NavLink className={({isActive})=>isActive ? 'font-bold text-green-600' : ''}>Home</NavLink>
             </li>
             <li>
-              <NavLink to='/listedBook' className={({isActive})=>isActive ? 'font-bold text-green-600' : 'btn btn-ghost text-xl'}>Listed books</NavLink>
+              <NavLink to='/listedBook' className={({isActive})=>isActive ? 'font-bold text-green-600' : ''}>Listed books</NavLink>
             </li>
             <li>
-              <NavLink to='/pageToRead' className={({isActive})=>isActive ? 'font-bold text-green-600' : 'btn btn-ghost text-xl'}>Pages to Read</NavLink>
+              <NavLink to='/pageToRead' className={({isActive})=>isActive ? 'font-bold text-green-600' : ''}>Pages to Read</NavLink>
             </li>
           </ul>
         </div>
