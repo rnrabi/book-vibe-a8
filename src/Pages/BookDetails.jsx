@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLoaderData, useParams } from "react-router-dom";
-import { addLs } from "../Utilites";
+import { addLs, addWishListLs } from "../Utilites";
 
 const BookDetails = () => {
   //   const [bookSingle, setBookSingle] = useState([]);
@@ -16,7 +16,10 @@ const handleRead = (id)=>{
   console.log('read is clicked')
   addLs(id)
 }
-
+const handleWishList = (id)=>{
+  console.log('wish list clicked')
+  addWishListLs(id)
+}
 
 
 
@@ -58,8 +61,7 @@ const handleRead = (id)=>{
               </button>
 
               <button
-                rel="noopener noreferrer"
-                href="#"
+                onClick={()=>handleWishList(bookId)}
                 className="px-8 py-3 text-lg font-semibold border rounded dark:border-gray-800"
               >
                Wishlist
