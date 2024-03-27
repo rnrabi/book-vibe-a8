@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { FaUserGroup } from "react-icons/fa6";
 import { MdOutlinePageview } from "react-icons/md";
 const CardBook = ({rbook}) => {
-  console.log(rbook)
+  // console.log(rbook)
 const { bookId , bookName , image , author , category , rating,tags, yearOfPublishing , totalPages , publisher} = rbook;
 
 

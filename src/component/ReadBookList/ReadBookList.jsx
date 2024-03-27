@@ -7,7 +7,7 @@ const ReadBookList = () => {
 const [readedBook , setReadedBook] =useState([]);
 const readBookList = useLoaderData();
 
-console.log(readBookList , readedBook);
+// console.log(readBookList , readedBook);
 
 useEffect(()=>{
     const lsId = getLs();
