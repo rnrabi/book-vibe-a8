@@ -8,16 +8,18 @@ import Books from "./component/Books/Books";
 import BookDetails from "./Pages/BookDetails";
 import ReadBookList from "./component/ReadBookList/ReadBookList";
 import WishLIstBookLIst from "./component/WishLIstBookList/WishLIstBookLIst";
+import FourOfour from "./Pages/FourOfour/FourOfour";
 
 export const router = createBrowserRouter([
     {
       path: "/",
       element: <Home></Home>,
+      errorElement:<FourOfour></FourOfour>,
       children:[
         {
             path:'/',
             element:<Books></Books>,
-            loader:()=>fetch(`books.json`)
+            loader:()=>fetch(`../books.json`)
         },
         {
             path:'/listedBook',

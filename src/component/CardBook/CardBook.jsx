@@ -1,5 +1,6 @@
 import { CiLocationOn } from "react-icons/ci";
 import PropTypes from 'prop-types';
+import { Link } from "react-router-dom";
 const CardBook = ({rbook}) => {
   console.log(rbook)
 const { bookName , image , author , category , rating,tags, yearOfPublishing , totalPages , publisher} = rbook;
@@ -30,7 +31,7 @@ const { bookName , image , author , category , rating,tags, yearOfPublishing , t
                 <div className="flex text-sm divide-x">
                   <button>Category:{category}</button>
                   <button className="mx-4">Rating:{rating}</button>
-                  <button>View Detail</button>
+                  <Link><button>View Detail</button></Link>
                 </div>
 
               </div>
