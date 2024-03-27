@@ -1,4 +1,4 @@
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import banner from "../../assets/banner.jpg";
 import SingleBook from "../SingleBook/SingleBook";
 const Books = () => {
@@ -13,7 +13,7 @@ const Books = () => {
             <h1 className="text-5xl font-bold mb-4">
               Books to freshen up your bookshelf{" "}
             </h1>
-            <button className="btn btn-primary">View the list</button>
+            <Link to='/listedBook'><button className="btn bg-green-500">View the list</button></Link>
           </div>
         </div>
       </div>

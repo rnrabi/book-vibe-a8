@@ -28,7 +28,7 @@ export const router = createBrowserRouter([
               {
                 index:true,
                 element:<ReadBookList></ReadBookList>,
-                loader:()=>fetch(`./books.json`)
+                loader:()=>fetch(`../books.json`)
               },
               {
                 path:'wishListBookList',
@@ -38,13 +38,13 @@ export const router = createBrowserRouter([
             ]
         },
         {
-            path:'pageToRead',
+            path:'/pageToRead',
             element:<PageToRead></PageToRead>
         },
         {
           path:'/bookDetails/:id',
           element:<BookDetails></BookDetails>,
-          loader:()=>fetch(`books.json`)
+          loader:()=>fetch(`../books.json`)
         }
       ]
     }

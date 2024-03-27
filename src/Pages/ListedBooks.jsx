@@ -3,6 +3,8 @@ import { Link, Outlet } from "react-router-dom";
 const ListedBooks = () => {
   return (
     <div>
+      <h2 className="text-center font-bold text-3xl">Books</h2>
+      <h2>here sorted</h2>
       <div className="flex items-center -mx-4 overflow-x-auto overflow-y-hidden sm:justify-center flex-nowrap dark:bg-gray-100 dark:text-gray-800">
         <Link
          to=''

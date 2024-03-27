@@ -20,7 +20,6 @@ const WishLIstBookLIst = () => {
 
   return (
     <div>
-      <h2>This is wisht list book list</h2>
       {
         wishListBook.map(wbook =><CardWish 
             key={wbook.bookId}

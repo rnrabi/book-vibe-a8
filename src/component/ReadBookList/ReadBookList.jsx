@@ -18,8 +18,7 @@ useEffect(()=>{
 
 
   return (
-    <div>
-      <h2>Read book list</h2>
+    <div className="">
       {
         readedBook.map(rbook =><CardBook
            key={rbook.bookId}

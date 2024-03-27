@@ -29,7 +29,6 @@ const handleWishList = (id)=>{
 
   return (
     <div>
-      <h2>This is book details page</h2>
       <section className="dark:bg-gray-100 dark:text-gray-800">
         <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
           <div className="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
@@ -46,12 +45,12 @@ const handleWishList = (id)=>{
             <p className="mt-6 mb-8 text-lg sm:mb-12">
              By: {author}
             </p>
-            <p>{review}</p>
+            <p> <span className="font-bold">Review:</span> {review}</p>
             <p>Tag: {tags.map((tag , index) =><span key={index} className="font-semibold ml-4 text-green-500">#{tag}</span>)} </p>
-            <p>Number of page: {totalPages}</p>
-            <p>Publisher : {publisher}</p>
-            <p>Year of publishing : {yearOfPublishing} </p>
-            <p>Rating : {rating} </p>
+            <p><span className="font-bold">Number of page:</span> {totalPages}</p>
+            <p><span className="font-bold">Publisher :</span> {publisher}</p>
+            <p><span className="font-bold">Year of publishing :</span> {yearOfPublishing} </p>
+            <p><span className="font-bold">Rating :</span> {rating} </p>
 
 
             <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
