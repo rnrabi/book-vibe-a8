@@ -13,7 +13,7 @@ useEffect(()=>{
     const lsId = getLs();
     const readingBook = readBookList.filter(readBook =>lsId.includes(readBook.bookId));
     setReadedBook(readingBook);
-},[])
+},[readBookList])
 
 
 

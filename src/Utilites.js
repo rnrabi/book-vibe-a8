@@ -33,9 +33,13 @@ const addWishListLs = (id) => {
   if(!remainingLs.includes(id) && !reamingWishList.includes(id)){
     alert('you are added successfully')
     reamingWishList.push(id);
-    localStorage.setItem("wishList", JSON.stringify(remainingLs));
+    localStorage.setItem("wishList", JSON.stringify(reamingWishList));
   }
  alert('you all ready added')
 };
+
+// const removeWishList = (id)=>{
+//   localStorage.removeItem('wishList' , id)
+// }
 
 export { getLs, addLs , getWishListLs ,addWishListLs };

@@ -15,7 +15,9 @@ const BookDetails = () => {
 const handleRead = (id)=>{
   console.log('read is clicked')
   addLs(id)
+  // removeWishList(id)
 }
+
 const handleWishList = (id)=>{
   console.log('wish list clicked')
   addWishListLs(id)
