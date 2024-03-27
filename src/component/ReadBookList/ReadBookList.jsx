@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData, useLocation } from "react-router-dom";
 import { getLs } from "../../Utilites";
 import CardBook from "../CardBook/CardBook";
 
@@ -15,6 +15,9 @@ useEffect(()=>{
     setReadedBook(readingBook);
 },[readBookList])
 
+// This code for sorting. 
+const location = useLocation();
+console.log(location.state)
 
 
   return (
