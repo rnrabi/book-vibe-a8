@@ -20,7 +20,8 @@ const ListedBooks = () => {
       const readingBook = forSort.filter(book =>lsId.includes(book.bookId));
       setSortBook(readingBook);
   },[forSort])
-  
+
+  // sort by rating 
   const ratingSort = sortBook.sort((a ,b)=>{
     let x = a.rating; 
     let y = b.rating;
@@ -33,11 +34,37 @@ const ListedBooks = () => {
     else {return 0}
   })
 // console.log(ratingSort)
+
+// sort by pages
+const pagesSort = sortBook.sort((a ,b)=>{
+  let x = a.totalPages; 
+  let y = b.totalPages;
+  if(x<y){
+    return 1;
+  }
+  if(x>y){
+    return -1
+  }
+  else {return 0}
+})
+
+// sort by year
+
+const yearSort = sortBook.sort((a ,b)=>{
+  let x = a.yearOfPublishing; 
+  let y = b.yearOfPublishing;
+  if(x<y){
+    return 1;
+  }
+  if(x>y){
+    return -1
+  }
+  else {return 0}
+})
+
 const navigate = useNavigate();
 
-  // const [rating , setRating] = useState([]);
-  // const [pages , setPages] = useState([]);
-  // const [year , setYears] = useState([]);
+  
 
   const handleRating = ()=>{
     console.log('handle rating')
@@ -45,9 +72,11 @@ const navigate = useNavigate();
   }
   const handlePages = ()=>{
     console.log('handle pages')
+    navigate('/listedBook' , {state :pagesSort})
   }
   const handleYears = ()=>{
     console.log('handle years')
+    navigate('/listedBook' , {state :yearSort})
   }
 
 // This is sorting code above
@@ -66,10 +95,10 @@ const navigate = useNavigate();
               <a onClick={()=>handleRating()}>Rating</a>
             </li>
             <li>
-              <a>Pages</a>
+              <a onClick={()=>handlePages()}>Pages</a>
             </li>
             <li>
-              <a>Publish year</a>
+              <a onClick={()=>handleYears()}>Publish year</a>
             </li>
           </ul>
         </details>
