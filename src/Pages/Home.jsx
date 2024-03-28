@@ -4,7 +4,7 @@ import { ToastContainer, toast } from "react-toastify";
 
 
 const Home = () => {
-    const notify = () => toast("Wow so easy!");
+   
     return (
         <div>
             <Navber></Navber>
