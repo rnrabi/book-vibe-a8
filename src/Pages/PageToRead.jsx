@@ -26,7 +26,7 @@ const PageToRead = () => {
   }, [readBookList]);
 
   return (
-    <div className="flex justify-center mt-5">
+    <div className="md:flex justify-center mt-5">
       <BarChart
         width={500}
         height={300}
