@@ -1,3 +1,4 @@
+import { toast } from "react-toastify";
 
 
 const getLs = () => {
@@ -12,11 +13,13 @@ const getLs = () => {
 const addLs = (id) => {
   const remainingLs = getLs();
   if(!remainingLs.includes(id)){
-    alert('you are added successfully')
+    toast('you are added successfully')
     remainingLs.push(id);
     localStorage.setItem("read", JSON.stringify(remainingLs));
   }
- alert('you all ready added')
+  else{
+    toast('you all ready added')
+  }
 };
 
 
@@ -33,11 +36,13 @@ const addWishListLs = (id) => {
   const remainingLs = getLs();
   const reamingWishList = getWishListLs();
   if(!remainingLs.includes(id) && !reamingWishList.includes(id)){
-    alert('you are added successfully')
+    toast('you are added successfully')
     reamingWishList.push(id);
     localStorage.setItem("wishList", JSON.stringify(reamingWishList));
   }
- alert('you all ready added')
+ else{
+  toast('you all ready added')
+ }
 };
 
 // const removeWishList = (id)=>{

@@ -1,4 +1,4 @@
-import { Link, Outlet, useLoaderData, useNavigate } from "react-router-dom";
+import { Link, Outlet, useLoaderData, useLocation, useNavigate } from "react-router-dom";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { useEffect, useState } from "react";
 import { getLs } from "../Utilites";
@@ -8,7 +8,11 @@ const ListedBooks = () => {
 
   const [sortBook , setSortBook] =useState([]);
   const forSort = useLoaderData();
+  const locat = useLocation();
+ useEffect(()=>{
   
+  locat.state=[];
+ },[])
   // console.log(sortBook);
   
   useEffect(()=>{
@@ -21,10 +25,10 @@ const ListedBooks = () => {
     let x = a.rating; 
     let y = b.rating;
     if(x<y){
-      return -1;
+      return 1;
     }
     if(x>y){
-      return 1
+      return -1
     }
     else {return 0}
   })
