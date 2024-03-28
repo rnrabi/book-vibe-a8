@@ -24,8 +24,8 @@ const SingleBook = ({ book }) => {
           <p>By : {author}</p>
           <hr />
           <div className="card-actions justify-between">
-            <p>{category}</p>
-            <p className="text-right flex items-center gap-2">
+            <p> {category}</p>
+            <p className="text-right flex items-center justify-end gap-2">
               {rating} <FaRegStar />{" "}
             </p>
           </div>
