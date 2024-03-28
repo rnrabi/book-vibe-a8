@@ -42,9 +42,10 @@ const handleWishList = (id)=>{
             <h1 className="text-5xl font-bold leading-none sm:text-6xl">
              {bookName}
             </h1>
-            <p className="mt-6 mb-8 text-lg sm:mb-12">
+            <p className="mt-6 mb-2 text-lg sm:mb-12">
              By: {author}
             </p>
+            <p className="mb-2 font-bold">{category}</p>
             <p> <span className="font-bold">Review:</span> {review}</p>
             <p>Tag: {tags.map((tag , index) =><span key={index} className="font-semibold ml-4 text-green-500">#{tag}</span>)} </p>
             <p><span className="font-bold">Number of page:</span> {totalPages}</p>
@@ -53,17 +54,17 @@ const handleWishList = (id)=>{
             <p><span className="font-bold">Rating :</span> {rating} </p>
 
 
-            <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
+            <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start mt-3">
               <button
               onClick={()=>handleRead(bookId)}
-                className="px-8 py-3 text-lg font-semibold rounded dark:bg-violet-600 dark:text-gray-50"
+                className="btn btn-outline px-8 py-3 text-lg font-semibold rounded dark:bg-violet-600 dark:text-gray-50"
               >
                 Read
               </button>
 
               <button
                 onClick={()=>handleWishList(bookId)}
-                className="px-8 py-3 text-lg font-semibold border rounded dark:border-gray-800"
+                className=" btn bg-[#59C6D2] px-8 py-3 text-lg font-semibold border rounded dark:border-gray-800"
               >
                Wishlist
               </button>

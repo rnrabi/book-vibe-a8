@@ -56,7 +56,7 @@ const navigate = useNavigate();
 
       <div className="flex justify-center mx-auto mb-9">
         <details className="dropdown">
-          <summary className="m-1 btn">Sort By <RiArrowDropDownLine></RiArrowDropDownLine> </summary>
+          <summary className="m-1 btn bg-green-600">Sort By <RiArrowDropDownLine></RiArrowDropDownLine> </summary>
           <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
             <li>
               <a onClick={()=>handleRating()}>Rating</a>
